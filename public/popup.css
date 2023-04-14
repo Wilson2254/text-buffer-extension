@@ -1,3 +1,68 @@
-body {
-    background: red;
+:root {
+    --black: #000000;
+    --white: #fffff;
+    --gray: #ededed;
 }
+
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.app {
+    padding: 8px 8px 20px;
+    width: 300px;
+    background-color: var(--white);
+}
+
+.app__header {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin-bottom: 20px;
+}
+
+.section-btn {
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--black);
+    padding: 4px;
+    margin: 0;
+    width: 120px;
+    background-color: var(--gray);
+    border: 1px solid var(--black);
+    font-weight: 500;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.section-btn--active {
+    background-color: var(--white);
+    cursor: default;
+}
+
+.section-btn:hover {
+    background-color: var(--white);
+}
+
+.section-tab__element{
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--black);
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.section-tab__element:last-child{
+    margin-bottom: 0;
+}
+
+.drag-text{
+    margin-right: 8px;
+    align-items: center;
+}
+
+.drag-btn{
+    width: 24px;
+}
+

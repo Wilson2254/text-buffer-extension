@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>Text Buffer</title>
-  <link rel="stylesheet" type="text/css" href="popup.css" />
+    <meta charset="UTF-8"/>
+    <title>Text Buffer</title>
+    <link rel="stylesheet" type="text/css" href="popup.css"/>
 </head>
 <body>
-<div>
-ТЕСТ
-</div>
+<main class="app">
+    <div class="app__header">
+        <button class="section-btn section-btn--active">Chosen text</button>
+        <button class="section-btn">All text</button>
+    </div>
+    <div class="app__body">
+        <div class="section-tab">
+            <div class="section-tab__element">
+                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor</span>
+                <img class="drag-btn" src="./assets/drag-lines.svg" alt="Drag and drop button">
+            </div>
+            <div class="section-tab__element">
+                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor</span>
+                <img class="drag-btn" src="./assets/drag-lines.svg" alt="Drag and drop button">
+            </div>
+            <div class="section-tab__element">
+                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor</span>
+                <img class="drag-btn" src="./assets/drag-lines.svg" alt="Drag and drop button">
+            </div>
+            <div class="section-tab__element">
+                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor</span>
+                <img class="drag-btn" src="./assets/drag-lines.svg" alt="Drag and drop button">
+            </div>
+            <div class="section-tab__element">
+                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor</span>
+                <img class="drag-btn" src="./assets/drag-lines.svg" alt="Drag and drop button">
+            </div>
+        </div>
+    </div>
+</main>
 <script type="module" src="popup.js"></script>
 </body>
 </html>
