@@ -82,6 +82,7 @@ body {
 .drag-text {
     margin-right: 8px;
     align-items: center;
+    flex: 1;
 }
 
 .drag-btn {
