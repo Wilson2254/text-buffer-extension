@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Text Buffer</title>
+    <link rel="stylesheet" type="text/css" href="popup.css"/>
+</head>
+<body>
+<main class="app">
+    <div class="app__header">
+        <button id="firstViewBtn" class="section-btn section-btn--active">Chosen text</button>
+        <button id="secondViewBtn" class="section-btn">All text</button>
+    </div>
+    <div class="app__body">
+        <ul class="section-tab drag-section">
+        </ul>
+        <div class="section-tab section-tab--hide list-section">
+            <form class="adding-form">
+                <input class="adding-input" type="text" placeholder="Add new text">
+                <button class="adding-btn" type="submit">Add</button>
+            </form>
+            <ul class="text-store">
+            </ul>
+        </div>
+    </div>
+</main>
+<script defer src="Sortable.min.js"></script>
+<script defer src="popup.js"></script>
+</body>
+</html>
