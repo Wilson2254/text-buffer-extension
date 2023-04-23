@@ -8,34 +8,43 @@
 <body>
 <main class="app">
     <div class="app__header">
-        <button class="section-btn section-btn--active">Chosen text</button>
-        <button class="section-btn">All text</button>
+        <button id="firstViewBtn" class="section-btn section-btn--active">Chosen text</button>
+        <button id="secondViewBtn" class="section-btn">All text</button>
     </div>
     <div class="app__body">
-        <div class="section-tab">
-            <div class="section-tab__element">
-                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor</span>
+        <ul class="section-tab drag-section">
+            <li class="section-tab__element">
+                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor 1</span>
                 <img class="drag-btn" src="./assets/drag-lines.svg" alt="Drag and drop button">
-            </div>
-            <div class="section-tab__element">
-                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor</span>
+            </li>
+            <li class="section-tab__element">
+                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor 2</span>
                 <img class="drag-btn" src="./assets/drag-lines.svg" alt="Drag and drop button">
-            </div>
-            <div class="section-tab__element">
-                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor</span>
+            </li>
+            <li class="section-tab__element">
+                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor 3</span>
                 <img class="drag-btn" src="./assets/drag-lines.svg" alt="Drag and drop button">
-            </div>
-            <div class="section-tab__element">
-                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor</span>
+            </li>
+            <li class="section-tab__element">
+                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor 4</span>
                 <img class="drag-btn" src="./assets/drag-lines.svg" alt="Drag and drop button">
-            </div>
-            <div class="section-tab__element">
-                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor</span>
+            </li>
+            <li class="section-tab__element">
+                <span class="drag-text">Lorem ipsum dolor Lorem ipsum dolor 5</span>
                 <img class="drag-btn" src="./assets/drag-lines.svg" alt="Drag and drop button">
-            </div>
+            </li>
+        </ul>
+        <div class="section-tab section-tab--hide list-section">
+            <form class="adding-form">
+                <input class="adding-input" type="text" placeholder="Add new text">
+                <button class="adding-btn" type="submit">Add</button>
+            </form>
+            <ul class="text-store">
+            </ul>
         </div>
     </div>
 </main>
-<script type="module" src="popup.js"></script>
+<script defer src="Sortable.min.js"></script>
+<script defer src="popup.js"></script>
 </body>
 </html>
